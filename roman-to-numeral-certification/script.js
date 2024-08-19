@@ -40,11 +40,9 @@ const isValid = (str, int) => {
   } else if (int > 3999) {
     errText = 'Please enter a number less than or equal to 3999.';
   } else {
-    // No errors detected
     return true;
   }
 
-  // Handle error text and output styling
   output.innerText = errText;
   output.classList.add('alert');
 
